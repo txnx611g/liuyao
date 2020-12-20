@@ -86,7 +86,7 @@
             // btnCalc
             // 
             this.btnCalc.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnCalc.Location = new System.Drawing.Point(278, 210);
+            this.btnCalc.Location = new System.Drawing.Point(341, 210);
             this.btnCalc.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(115, 33);
@@ -161,7 +161,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnClear.Location = new System.Drawing.Point(278, 270);
+            this.btnClear.Location = new System.Drawing.Point(341, 270);
             this.btnClear.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(115, 33);
@@ -186,7 +186,7 @@
             this.textBox4.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox4.Location = new System.Drawing.Point(14, 64);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(383, 29);
+            this.textBox4.Size = new System.Drawing.Size(468, 29);
             this.textBox4.TabIndex = 12;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             this.textBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox4_KeyDown);
@@ -203,7 +203,7 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSave.Location = new System.Drawing.Point(278, 335);
+            this.btnSave.Location = new System.Drawing.Point(341, 339);
             this.btnSave.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(115, 33);
@@ -238,7 +238,7 @@
             // 
             this.txtContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtContent.Font = new System.Drawing.Font("新宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtContent.Location = new System.Drawing.Point(403, 9);
+            this.txtContent.Location = new System.Drawing.Point(502, 10);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
             this.txtContent.Size = new System.Drawing.Size(673, 379);
@@ -247,7 +247,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(278, 139);
+            this.button2.Location = new System.Drawing.Point(341, 139);
             this.button2.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 33);
@@ -264,7 +264,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1088, 567);
+            this.ClientSize = new System.Drawing.Size(1185, 567);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.button1);

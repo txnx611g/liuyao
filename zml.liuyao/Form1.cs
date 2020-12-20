@@ -14,7 +14,10 @@ namespace zml.liuyao
 {
     public partial class Form1 : Form
     {
-
+        /// <summary>
+        /// 预测起卦问的股票是今天还是明天自动填写,减少输入字符的麻烦
+        /// </summary>
+        /// <returns></returns>
         private string calcTodayOrYestoday()
         {
 
@@ -157,7 +160,7 @@ namespace zml.liuyao
         }
 
 
-        private void drawKan(Pen p, Graphics g, bool isUP)//乾卦
+        private void drawKan(Pen p, Graphics g, bool isUP)//坎卦
         {
 
             int deltaX = 35; int deltaY = 20; int gap = 10;
@@ -210,13 +213,13 @@ namespace zml.liuyao
             int y3 = y2 + deltaY;
 
             g.DrawLine(p, x10, y1, x13, y1);
-            // g.DrawLine(p, x12, y1, x13, y1);
+        
 
             g.DrawLine(p, x10, y2, x11, y2);
             g.DrawLine(p, x12, y2, x13, y2);
 
             g.DrawLine(p, x10, y3, x13, y3);
-            //g.DrawLine(p, x12, y3, x13, y3);
+    
         }
 
 
@@ -241,7 +244,6 @@ namespace zml.liuyao
             int y3 = y2 + deltaY;
 
             g.DrawLine(p, x10, y1, x13, y1);
-            //  g.DrawLine(p, x12, y1, x13, y1);
 
             g.DrawLine(p, x10, y2, x11, y2);
             g.DrawLine(p, x12, y2, x13, y2);
@@ -360,7 +362,7 @@ namespace zml.liuyao
                 {
                     case "1":
                         drawQian(p, g, false);
-                        label7.Text = "泽天夬224";
+                        label7.Text = "泽天夬340";
                         txtContent.Text = "泽天夬:扬于王庭。孚号有厉，告自邑：“不利即戎，利有攸往。”\r\n彖曰：夬，决也，刚决柔也。健而说，决而和，扬于王庭，柔乘五刚也。孚号有厉，其危乃光也。 告自邑，不利即戎，所尚乃穷也。 利有攸往，刚长乃终也。\r\n象曰：泽上于天，夬；君子以施禄及下，居德则忌。\r\n初九: 壮于前趾，往，不胜，为咎。\r\n象曰：不胜而往，咎也。\r\n九二: 惕号：“莫夜有戎，勿恤。”\r\n象曰：莫夜有戎，得中道也。\r\n九三: 壮于顷，有凶。君子抉抉独行，遇雨若濡。有愠，无咎。\r\n象曰：君子夬夬，终无咎也。\r\n九四: 臀无肤，其行次且，牵羊悔亡，闻言不信。\r\n象曰：其行次且，位不当也。 闻言不信，聪不明也。\r\n九五: 苋陆抉抉中行。无咎。\r\n象曰：中行无咎，中未光也。\r\n上六: 无号，终有凶。\r\n象曰：无号之凶，终不可长也。";
                         break;
                     case "2":
@@ -391,7 +393,7 @@ namespace zml.liuyao
                     case "7":
                         drawGen(p, g, false);
                         label7.Text = "泽山咸299";
-                        txtContent.Text = "天山遁:亨小，利贞。\r\n 彖曰：遯亨，遯而亨也。 刚当位而应，与时行也。 小利贞，浸而长也。遯之时义大矣哉！\r\n 象曰：天下有山，遯；君子以远小人，不恶而严。\r\n初六: 遁尾厉，勿用有攸往。\r\n 象曰：遯尾之厉，不往何灾也。\r\n六二: 执之用黄牛之革，莫之胜说。\r\n 象曰：执用黄牛，固志也。\r\n九三: 系遁，有疾厉畜臣妾，吉。\r\n 象曰：系遯之厉，有疾惫也。 畜臣妾吉，不可大事也。\r\n九四: 好遁。君子吉，小人否。\r\n 象曰：君子好遯，小人否也。\r\n九五: 嘉遁。贞：吉。\r\n 象曰：嘉遯贞吉，以正志也。\r\n上九: 肥遁。无不利。\r\n 象曰：肥遯，无不利；无所疑也。";
+                        txtContent.Text = "泽山咸:亨利贞，取女吉。\r\n彖曰：咸，感也。柔上而刚下，二气感应以相与，止而说，男下女，是以亨利贞，取女吉也。天地感而万物化生，圣人感人心而天下和平；观其所感，而天地万物之情可见矣!\r\n象曰：山上有泽，咸；君子以虚受人。\r\n初六: 咸其拇。\r\n象曰：咸其拇，志在外也。\r\n六二: 咸其腓，凶。居，吉。\r\n象曰：虽凶，居吉，顺不害也。\r\n九三: 咸其股，执其随，往，吝。\r\n象曰：咸其股，亦不处也。 志在随人，所执下也。\r\n九四: 贞：吉、悔亡。憧憧往来，朋从尔思。\r\n象曰：贞吉悔亡，未感害也。 憧憧往来，未光大也。\r\n九五: 咸其晦，无悔。\r\n象曰：咸其脢，志末也。\r\n上六: 咸其辅颊舌。\r\n象曰：咸其辅，颊，舌，滕口说也";
                         break;
                     case "8":
                         drawKun(p, g, false);
@@ -712,7 +714,7 @@ namespace zml.liuyao
 
             textBox1.Text = i.ToString();
             if (i % 8 == 0)
-                label4.Text = 8.ToString();
+                label4.Text = "8";
             else
                 label4.Text = (i % 8).ToString();
 
@@ -721,7 +723,7 @@ namespace zml.liuyao
 
             textBox2.Text = i.ToString();
             if (i % 8 == 0)
-                label5.Text = 8.ToString();
+                label5.Text = "8";
             else
                 label5.Text = (i % 8).ToString();
 
@@ -729,7 +731,7 @@ namespace zml.liuyao
             i = rd.Next(100, 1000);
             textBox3.Text = i.ToString();
             if (i % 6 == 0)
-                label6.Text = 6.ToString();
+                label6.Text ="6";
             else
                 label6.Text = (i % 6).ToString();
 
